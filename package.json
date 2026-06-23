@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "private": true,
   "type": "module",
+  "license": "MIT",
   "description": "Personal portfolio of Douglas Rodrigues — Backend Developer & Tech Lead.",
   "scripts": {
     "dev": "vite",
