@@ -83,7 +83,7 @@ export const profile: Profile = {
     highlight: "built to scale",
     headlineTail: "and stay reliable.",
     subhead:
-      "Tech Lead with 5+ years architecting cloud-native services in Node.js, NestJS, TypeScript and PostgreSQL, turning business requirements into systems teams can depend on.",
+      "Backend developer and tech lead with 5+ years architecting cloud-native services in Node.js, NestJS, TypeScript and PostgreSQL, turning business requirements into systems teams can depend on.",
   },
 
   stats: [
