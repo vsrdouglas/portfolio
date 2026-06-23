@@ -142,11 +142,11 @@ export const profile: Profile = {
     },
     {
       label: "Backend",
-      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "GraphQL", "Microservices"],
+      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices"],
     },
     {
       label: "Data",
-      items: ["PostgreSQL", "Redis", "Data modeling", "Query optimization", "Migrations"],
+      items: ["PostgreSQL", "Redis", "NoSQL", "Data modeling", "Query optimization", "Migrations"],
     },
     {
       label: "Cloud & DevOps",
@@ -158,7 +158,7 @@ export const profile: Profile = {
     },
     {
       label: "Testing",
-      items: ["Jest", "Automated testing"],
+      items: ["Jest", "Playwright"],
     },
   ],
 
