@@ -211,7 +211,7 @@ export const profile: Profile = {
       context: "Muay Thai & Boxing event · Ouro Preto, MG",
       description:
         "End-to-end platform for one of the largest combat-sports events in the Inconfidentes region. I built the full stack: an animated public site with online athlete registrations, plus a secure admin dashboard backed by a serverless API on Firebase, with JWT auth, rate limiting, analytics and end-to-end tests.",
-      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase", "Cloud Functions", "Firestore", "Express"],
+      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase", "Cloud Functions", "NoSQL", "Express"],
       live: "https://inconfidentesfight.com.br/",
     },
   ],
