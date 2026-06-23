@@ -51,12 +51,6 @@ export function About() {
                     Scalable, cloud-native backend systems
                   </dd>
                 </div>
-                <div>
-                  <dt className="text-muted">Open to</dt>
-                  <dd className="mt-1 font-medium text-ink">
-                    Backend &amp; tech leadership roles
-                  </dd>
-                </div>
               </dl>
             </aside>
           </Reveal>

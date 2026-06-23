@@ -81,7 +81,7 @@ export const profile: Profile = {
     highlight: "built to scale",
     headlineTail: "and stay reliable.",
     subhead:
-      "Tech Lead with 5+ years architecting cloud-native services in Node.js, NestJS, TypeScript and PostgreSQL — turning business requirements into systems teams can depend on.",
+      "Tech Lead with 5+ years architecting cloud-native services in Node.js, NestJS, TypeScript and PostgreSQL, turning business requirements into systems teams can depend on.",
   },
 
   stats: [
@@ -91,8 +91,8 @@ export const profile: Profile = {
   ],
 
   about: [
-    "I'm a backend engineer with 5+ years building scalable, cloud-native systems and high-performance services. I specialize in Node.js, TypeScript, PostgreSQL and Google Cloud — designing architectures that hold up as the business grows.",
-    "As a T-shaped engineer, deep backend expertise sits next to a working knowledge of cloud infrastructure, frontend and mobile. That range lets me make sound technical calls and contribute wherever the impact is highest — from API design and data migrations to shipping Angular and Flutter features when the team needs them.",
+    "I'm a backend engineer with 5+ years building scalable, cloud-native systems and high-performance services. I specialize in Node.js, TypeScript, PostgreSQL and Google Cloud, designing architectures that hold up as the business grows.",
+    "As a T-shaped engineer, deep backend expertise sits next to a working knowledge of cloud infrastructure, frontend and mobile. That range lets me make sound technical calls and contribute wherever the impact is highest: API design, data migrations, or shipping Angular and Flutter features when the team needs them.",
     "Today I lead backend architecture and a cross-functional team, mentoring engineers and acting as the bridge between the codebase and the people who depend on it.",
   ],
 
@@ -148,14 +148,14 @@ export const profile: Profile = {
   experience: [
     {
       company: "Tekna.Rocks",
-      role: "Backend Developer & Tech Lead",
-      period: "Oct 2021 — Present",
+      role: "Backend Developer",
+      period: "Oct 2021 - Present",
       location: "Remote · Mill Valley, CA",
       summary:
         "Leading backend architecture and a cross-functional engineering team building SaaS products for regulated industries.",
       highlights: [
         "Lead the architecture, development and delivery of new features, major integrations and platform improvements, translating business requirements into scalable technical solutions.",
-        "Own cloud infrastructure and DevOps on Google Cloud — operating serverless applications, managing cloud costs and maintaining CI/CD pipelines for reliable, high-availability deploys.",
+        "Own cloud infrastructure and DevOps on Google Cloud, operating serverless applications, managing cloud costs and maintaining CI/CD pipelines for reliable, high-availability deploys.",
         "Drive PostgreSQL architecture, SQL optimization, data migrations and large-scale refactors across core business systems.",
         "Mentor developers through 1:1s, architecture reviews and feedback cycles, and introduced AI-assisted engineering workflows to the team.",
         "Act as the technical point of contact for third-party vendors during integration and implementation projects.",
@@ -165,7 +165,7 @@ export const profile: Profile = {
     {
       company: "Universidade Federal de Itajubá",
       role: "Teaching Assistant",
-      period: "Apr 2021 — Aug 2021",
+      period: "Apr 2021 - Aug 2021",
       location: "Itabira, Brazil",
       summary:
         "Teaching assistant for Modeling and Analysis of Dynamic Systems, supporting students through theory and applied problem sets.",
@@ -174,8 +174,8 @@ export const profile: Profile = {
     },
     {
       company: "Universidade Federal de Itajubá",
-      role: "Undergraduate Researcher — PIVIC",
-      period: "Aug 2020 — Aug 2021",
+      role: "Undergraduate Researcher (PIVIC)",
+      period: "Aug 2020 - Aug 2021",
       location: "Itabira, Brazil",
       summary:
         "Scientific initiation research project in control and automation engineering.",
@@ -199,20 +199,20 @@ export const profile: Profile = {
     {
       school: "Universidade Federal de Itajubá",
       credential: "B.Eng. in Control and Automation Engineering",
-      period: "2018 — 2022",
+      period: "2018 - 2022",
     },
     {
-      school: "Instituto Federal de Minas Gerais — IFMG",
+      school: "Instituto Federal de Minas Gerais (IFMG)",
       credential: "Technical Course in Industrial Automation",
-      period: "2015 — 2017",
+      period: "2015 - 2017",
     },
   ],
 
   certifications: [
-    "Six Sigma — Green Belt",
-    "Six Sigma — White Belt",
-    "Flutter & Dart — The Complete Guide",
-    "NodeJS — The Complete Guide (MVC, REST, GraphQL, Deno)",
+    "Six Sigma Green Belt",
+    "Six Sigma White Belt",
+    "Flutter & Dart: The Complete Guide",
+    "NodeJS: The Complete Guide (MVC, REST, GraphQL, Deno)",
     "HTML, CSS & JavaScript for Web Developers",
   ],
 };
