@@ -18,8 +18,8 @@ export function Contact() {
             Let's build something <span className="text-gradient">reliable</span>.
           </h2>
           <p className="relative mx-auto mt-5 max-w-xl text-lg leading-relaxed text-muted">
-            Got a backend challenge, an architecture to untangle, or a role in
-            mind? I'd be glad to talk it through.
+            Got a full-stack challenge or an architecture to untangle? I'd be
+            glad to talk it through.
           </p>
 
           <div className="relative mt-10 flex flex-wrap items-center justify-center gap-3">
