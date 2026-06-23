@@ -257,8 +257,7 @@ export const profile: Profile = {
       // year: "...",
       featured: true,
     },
-    { name: "Six Sigma White Belt" },
-    { name: "Flutter & Dart: The Complete Guide" },
     { name: "NodeJS: The Complete Guide (MVC, REST, GraphQL, Deno)" },
+    { name: "Flutter & Dart: The Complete Guide" },
   ],
 };
