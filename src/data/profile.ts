@@ -142,8 +142,8 @@ export const profile: Profile = {
       items: ["Angular", "Flutter", "HTML & CSS"],
     },
     {
-      label: "Practices",
-      items: ["Automated testing (Jest)", "Architecture reviews", "Mentoring", "Technical leadership"],
+      label: "Testing",
+      items: ["Jest", "Automated testing"],
     },
   ],
 
