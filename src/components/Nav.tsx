@@ -51,7 +51,7 @@ export function Nav() {
           >
             DR
           </span>
-          <span className="hidden sm:inline">{profile.name}</span>
+          <span>{profile.name}</span>
         </a>
 
         <ul className="hidden items-center gap-7 md:flex">
