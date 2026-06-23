@@ -249,14 +249,14 @@ export const profile: Profile = {
     {
       name: "HTML, CSS & JavaScript for Web Developers",
       issuer: "Johns Hopkins University",
-      // year: "2021",          // <- set the year you earned it
+      year: "2021",
       logo: johnsHopkinsLogo,
       featured: true,
     },
     {
       name: "Six Sigma Green Belt",
       issuer: "RL & Associados",
-      // year: "...",            // <- set the year if you want it shown
+      year: "2021",
       logo: rlAssociadosLogo,
       featured: true,
     },
