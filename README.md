@@ -63,8 +63,9 @@ the project's **Custom domains** once the first deploy is live.
 `public/_headers` is copied into `dist/` and applies security headers plus
 long-lived caching for hashed assets.
 
-## To do before launch
+## Maintenance notes
 
-- Add a real `public/og.png` (1200×630) for link previews — referenced in `index.html`.
-- Update the canonical/OG URLs in `index.html` to the final domain.
-- Fill in `projects` in `src/data/profile.ts`.
+- The link-preview image lives at `public/og.png` (1200×630). To regenerate it,
+  re-render the design and overwrite that file.
+- Site URLs (canonical / Open Graph) point at `https://douglas-rodrigues.com/`.
+- Add new work to `projects` in `src/data/profile.ts` — each entry becomes a card.
