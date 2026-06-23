@@ -20,6 +20,18 @@ export function Nav() {
     };
   }, [menuOpen]);
 
+  // Close the mobile menu when the viewport grows to desktop, so the menu
+  // can't stay "open" (and keep the scroll lock) once it's hidden by CSS.
+  useEffect(() => {
+    if (!menuOpen) return;
+    const mql = window.matchMedia("(min-width: 768px)");
+    const onChange = () => {
+      if (mql.matches) setMenuOpen(false);
+    };
+    mql.addEventListener("change", onChange);
+    return () => mql.removeEventListener("change", onChange);
+  }, [menuOpen]);
+
   return (
     <header
       className={`fixed inset-x-0 top-0 z-50 transition-colors duration-300 ${
