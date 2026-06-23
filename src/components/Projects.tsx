@@ -25,7 +25,12 @@ export function Projects() {
                 <h3 className="font-display text-lg font-bold text-ink">
                   {project.name}
                 </h3>
-                <p className="mt-2 flex-1 leading-relaxed text-muted">
+                {project.context ? (
+                  <p className="mt-1 font-mono text-xs text-accent">
+                    {project.context}
+                  </p>
+                ) : null}
+                <p className="mt-3 flex-1 leading-relaxed text-muted">
                   {project.description}
                 </p>
                 <ul className="mt-4 flex flex-wrap gap-2">

@@ -33,6 +33,8 @@ export interface Project {
   readonly name: string;
   readonly description: string;
   readonly stack: readonly string[];
+  /** Where it was built, e.g. "Built at Tekna.Rocks". Use for private/proprietary work. */
+  readonly context?: string;
   readonly repo?: string;
   readonly live?: string;
 }
@@ -85,7 +87,7 @@ export const profile: Profile = {
   },
 
   stats: [
-    { value: "5+", label: "Years building backend" },
+    { value: "5+", label: "Years building & leading" },
     { value: "Scalable", label: "Cloud-native by design" },
     { value: "T-shaped", label: "Backend deep, full-stack wide" },
   ],
@@ -184,14 +186,24 @@ export const profile: Profile = {
     },
   ],
 
-  // Add projects here as you publish them — each object becomes a card automatically.
-  // Example:
+  // Add projects here as you build them. Each object becomes a card automatically.
+  // repo, live and context are all optional, so private/proprietary work fits too:
+  //
+  // Public side project:
   // {
   //   name: "Service name",
   //   description: "One or two sentences on what it does and the impact.",
   //   stack: ["NestJS", "PostgreSQL", "GCP"],
   //   repo: "https://github.com/vsrdouglas/...",
   //   live: "https://...",
+  // },
+  //
+  // Private / proprietary work (no links, show where it was built instead):
+  // {
+  //   name: "Billing platform",
+  //   context: "Built at Tekna.Rocks",
+  //   description: "What it does and the business impact, without exposing internals.",
+  //   stack: ["NestJS", "PostgreSQL", "GCP"],
   // },
   projects: [],
 
