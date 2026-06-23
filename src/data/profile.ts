@@ -205,7 +205,16 @@ export const profile: Profile = {
   //   description: "What it does and the business impact, without exposing internals.",
   //   stack: ["NestJS", "PostgreSQL", "GCP"],
   // },
-  projects: [],
+  projects: [
+    {
+      name: "Inconfidentes Fight",
+      context: "Muay Thai & Boxing event · Ouro Preto, MG",
+      description:
+        "Official landing page for one of the largest combat-sports events in the Inconfidentes region. Built to strengthen the event's brand, centralize information, showcase the fighters, and streamline athlete registrations.",
+      stack: ["Next.js", "React", "TypeScript", "Tailwind CSS"],
+      live: "https://inconfidentesfight.com.br/",
+    },
+  ],
 
   education: [
     {

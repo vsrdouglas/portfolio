@@ -13,7 +13,7 @@ export function Projects() {
       title="Selected work"
       intro={
         hasProjects
-          ? "A few things I've built and shipped."
+          ? "Things I've built and shipped."
           : undefined
       }
     >
