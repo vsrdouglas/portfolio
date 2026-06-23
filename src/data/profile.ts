@@ -2,6 +2,7 @@
  * Single source of truth for every word and link on the site.
  * Edit this file to update content — components read from it, never hardcode.
  */
+import inconfidentesFightLogo from "../assets/inconfidentes-fight-logo.png";
 
 export interface SocialLink {
   readonly label: string;
@@ -35,6 +36,8 @@ export interface Project {
   readonly stack: readonly string[];
   /** Where it was built, e.g. "Built at Tekna.Rocks". Use for private/proprietary work. */
   readonly context?: string;
+  /** Optional logo/brand image. Shown on a dark banner at the top of the card. */
+  readonly logo?: string;
   readonly repo?: string;
   readonly live?: string;
 }
@@ -209,6 +212,7 @@ export const profile: Profile = {
     {
       name: "Inconfidentes Fight",
       context: "Muay Thai & Boxing event · Ouro Preto, MG",
+      logo: inconfidentesFightLogo,
       description:
         "End-to-end platform for one of the largest combat-sports events in the Inconfidentes region. I built the full stack: an animated public site with online athlete registrations, plus a secure admin dashboard backed by a serverless API on Firebase, with JWT auth, rate limiting, analytics and end-to-end tests.",
       stack: ["Next.js", "React", "TypeScript", "Tailwind CSS", "Firebase", "Cloud Functions", "NoSQL", "Express"],

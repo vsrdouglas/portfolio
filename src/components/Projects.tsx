@@ -21,49 +21,62 @@ export function Projects() {
         <div className="grid gap-5 sm:grid-cols-2">
           {profile.projects.map((project, index) => (
             <Reveal key={project.name} delay={(index % 2) * 0.08}>
-              <article className="flex h-full flex-col rounded-2xl border border-line bg-surface p-6 transition-colors hover:border-accent/40">
-                <h3 className="font-display text-lg font-bold text-ink">
-                  {project.name}
-                </h3>
-                {project.context ? (
-                  <p className="mt-1 font-mono text-xs text-accent">
-                    {project.context}
-                  </p>
+              <article className="flex h-full flex-col overflow-hidden rounded-2xl border border-line bg-surface transition-colors hover:border-accent/40">
+                {project.logo ? (
+                  <div className="flex items-center justify-center border-b border-line bg-ink px-6 py-10">
+                    <img
+                      src={project.logo}
+                      alt={`${project.name} logo`}
+                      loading="lazy"
+                      decoding="async"
+                      className="h-16 w-auto max-w-[75%] object-contain"
+                    />
+                  </div>
                 ) : null}
-                <p className="mt-3 flex-1 leading-relaxed text-muted">
-                  {project.description}
-                </p>
-                <ul className="mt-4 flex flex-wrap gap-2">
-                  {project.stack.map((tech) => (
-                    <li
-                      key={tech}
-                      className="rounded-md bg-ground px-2.5 py-1 font-mono text-xs text-muted"
-                    >
-                      {tech}
-                    </li>
-                  ))}
-                </ul>
-                <div className="mt-5 flex gap-4 text-sm font-medium">
-                  {project.repo ? (
-                    <a
-                      href={project.repo}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="inline-flex items-center gap-1.5 text-ink transition-colors hover:text-accent"
-                    >
-                      <GitHubIcon width={16} height={16} /> Code
-                    </a>
+                <div className="flex flex-1 flex-col p-6">
+                  <h3 className="font-display text-lg font-bold text-ink">
+                    {project.name}
+                  </h3>
+                  {project.context ? (
+                    <p className="mt-1 font-mono text-xs text-accent">
+                      {project.context}
+                    </p>
                   ) : null}
-                  {project.live ? (
-                    <a
-                      href={project.live}
-                      target="_blank"
-                      rel="noreferrer noopener"
-                      className="inline-flex items-center gap-1.5 text-ink transition-colors hover:text-accent"
-                    >
-                      Live <ArrowUpRightIcon width={16} height={16} />
-                    </a>
-                  ) : null}
+                  <p className="mt-3 flex-1 leading-relaxed text-muted">
+                    {project.description}
+                  </p>
+                  <ul className="mt-4 flex flex-wrap gap-2">
+                    {project.stack.map((tech) => (
+                      <li
+                        key={tech}
+                        className="rounded-md bg-ground px-2.5 py-1 font-mono text-xs text-muted"
+                      >
+                        {tech}
+                      </li>
+                    ))}
+                  </ul>
+                  <div className="mt-5 flex gap-4 text-sm font-medium">
+                    {project.repo ? (
+                      <a
+                        href={project.repo}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="inline-flex items-center gap-1.5 text-ink transition-colors hover:text-accent"
+                      >
+                        <GitHubIcon width={16} height={16} /> Code
+                      </a>
+                    ) : null}
+                    {project.live ? (
+                      <a
+                        href={project.live}
+                        target="_blank"
+                        rel="noreferrer noopener"
+                        className="inline-flex items-center gap-1.5 text-ink transition-colors hover:text-accent"
+                      >
+                        Live <ArrowUpRightIcon width={16} height={16} />
+                      </a>
+                    ) : null}
+                  </div>
                 </div>
               </article>
             </Reveal>
