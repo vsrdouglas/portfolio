@@ -53,7 +53,7 @@ export function Education() {
                         alt={cert.issuer ?? cert.name}
                         loading="lazy"
                         decoding="async"
-                        className="h-12 w-12 shrink-0 rounded-lg object-contain"
+                        className="h-12 w-12 shrink-0 rounded-lg border border-line object-contain"
                       />
                     ) : (
                       <span

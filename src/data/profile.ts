@@ -3,6 +3,8 @@
  * Edit this file to update content — components read from it, never hardcode.
  */
 import inconfidentesFightLogo from "../assets/inconfidentes-fight-logo.png";
+import johnsHopkinsLogo from "../assets/johns-hopkins-logo.png";
+import rlAssociadosLogo from "../assets/rl-associados-logo.png";
 
 export interface SocialLink {
   readonly label: string;
@@ -248,13 +250,14 @@ export const profile: Profile = {
       name: "HTML, CSS & JavaScript for Web Developers",
       issuer: "Johns Hopkins University",
       // year: "2021",          // <- set the year you earned it
-      // logo: johnsHopkinsLogo, // <- drop the logo in src/assets and import it at the top
+      logo: johnsHopkinsLogo,
       featured: true,
     },
     {
       name: "Six Sigma Green Belt",
-      // issuer: "...",          // <- set the issuer if you want it shown
-      // year: "...",
+      issuer: "RL & Associados",
+      // year: "...",            // <- set the year if you want it shown
+      logo: rlAssociadosLogo,
       featured: true,
     },
     { name: "NodeJS: The Complete Guide (MVC, REST, GraphQL, Deno)" },
