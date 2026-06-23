@@ -47,6 +47,15 @@ export function ArrowUpRightIcon(props: SVGProps<SVGSVGElement>) {
   );
 }
 
+export function AwardIcon(props: SVGProps<SVGSVGElement>) {
+  return (
+    <svg {...base} {...props}>
+      <circle cx="12" cy="8" r="6" />
+      <path d="M15.5 13.5 17 22l-5-3-5 3 1.5-8.5" />
+    </svg>
+  );
+}
+
 export function ArrowDownIcon(props: SVGProps<SVGSVGElement>) {
   return (
     <svg {...base} {...props}>

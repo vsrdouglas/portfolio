@@ -48,6 +48,16 @@ export interface EducationEntry {
   readonly period: string;
 }
 
+export interface Certification {
+  readonly name: string;
+  readonly issuer?: string;
+  readonly year?: string;
+  /** Optional issuer logo. Falls back to an initials/award badge when absent. */
+  readonly logo?: string;
+  /** Featured certs render as rich cards; the rest as a compact list. */
+  readonly featured?: boolean;
+}
+
 export interface Profile {
   readonly name: string;
   readonly role: string;
@@ -69,7 +79,7 @@ export interface Profile {
   readonly experience: readonly ExperienceEntry[];
   readonly projects: readonly Project[];
   readonly education: readonly EducationEntry[];
-  readonly certifications: readonly string[];
+  readonly certifications: readonly Certification[];
 }
 
 export const profile: Profile = {
@@ -234,10 +244,21 @@ export const profile: Profile = {
   ],
 
   certifications: [
-    "Six Sigma Green Belt",
-    "Six Sigma White Belt",
-    "Flutter & Dart: The Complete Guide",
-    "NodeJS: The Complete Guide (MVC, REST, GraphQL, Deno)",
-    "HTML, CSS & JavaScript for Web Developers",
+    {
+      name: "HTML, CSS & JavaScript for Web Developers",
+      issuer: "Johns Hopkins University",
+      // year: "2021",          // <- set the year you earned it
+      // logo: johnsHopkinsLogo, // <- drop the logo in src/assets and import it at the top
+      featured: true,
+    },
+    {
+      name: "Six Sigma Green Belt",
+      // issuer: "...",          // <- set the issuer if you want it shown
+      // year: "...",
+      featured: true,
+    },
+    { name: "Six Sigma White Belt" },
+    { name: "Flutter & Dart: The Complete Guide" },
+    { name: "NodeJS: The Complete Guide (MVC, REST, GraphQL, Deno)" },
   ],
 };
