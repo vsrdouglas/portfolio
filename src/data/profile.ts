@@ -146,7 +146,7 @@ export const profile: Profile = {
     },
     {
       label: "Data",
-      items: ["PostgreSQL", "Redis", "NoSQL", "Data modeling", "Query optimization", "Migrations"],
+      items: ["PostgreSQL", "Redis", "NoSQL", "Data modeling", "Query optimization"],
     },
     {
       label: "Cloud & DevOps",
