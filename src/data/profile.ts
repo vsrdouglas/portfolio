@@ -86,7 +86,7 @@ export const profile: Profile = {
 
   stats: [
     { value: "5+", label: "Years building backend" },
-    { value: "GCP", label: "Cloud-native by default" },
+    { value: "Scalable", label: "Cloud-native by design" },
     { value: "T-shaped", label: "Backend deep, full-stack wide" },
   ],
 
