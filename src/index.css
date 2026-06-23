@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — the single source of truth for color and type.
+ * Concept: "engineer's paper" — a soft cool-white ground (never pure white),
+ * an electric-blue → cyan signal gradient that nods to data and distributed
+ * systems, and a warm coral reserved strictly for interaction accents.
+ */
+@theme {
+  --color-ground: #f6f7fb;
+  --color-surface: #ffffff;
+  --color-ink: #0e1525;
+  --color-muted: #5a647a;
+  --color-line: #e4e8f0;
+
+  --color-accent: #2348ff;
+  --color-cyan: #16c2d5;
+  --color-warm: #ff6a3d;
+
+  --font-display: "Space Grotesk Variable", ui-sans-serif, system-ui, sans-serif;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", monospace;
+}
+
+@layer base {
+  :root {
+    color-scheme: light;
+    /* Signature gradient, defined once and reused everywhere. */
+    --signal: linear-gradient(110deg, var(--color-accent), var(--color-cyan));
+    scroll-behavior: smooth;
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    :root {
+      scroll-behavior: auto;
+    }
+    *,
+    *::before,
+    *::after {
+      animation-duration: 0.001ms !important;
+      animation-iteration-count: 1 !important;
+      transition-duration: 0.001ms !important;
+    }
+  }
+
+  html {
+    -webkit-font-smoothing: antialiased;
+    text-rendering: optimizeLegibility;
+  }
+
+  body {
+    background-color: var(--color-ground);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-feature-settings: "cv05", "ss01";
+  }
+
+  ::selection {
+    background-color: color-mix(in srgb, var(--color-accent) 18%, transparent);
+    color: var(--color-ink);
+  }
+
+  /* Visible, brand-coloured keyboard focus on every interactive element. */
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 3px;
+    border-radius: 4px;
+  }
+}
+
+@layer components {
+  /* Text painted with the signal gradient. */
+  .text-gradient {
+    background: var(--signal);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+
+  /* The mono "code comment" eyebrow used to label every section. */
+  .eyebrow {
+    font-family: var(--font-mono);
+    font-size: 0.8125rem;
+    letter-spacing: 0.02em;
+    color: var(--color-accent);
+  }
+}
