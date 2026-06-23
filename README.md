@@ -44,19 +44,24 @@ Colors and fonts are defined once as CSS custom properties in
 (`bg-ground`, `text-ink`, `text-accent`, `font-display`, …). Change them there
 to re-skin the whole site.
 
-## Deploying to Cloudflare Pages
+## Deploying to Cloudflare (Workers static assets)
 
-This is a static site — Cloudflare Pages serves it directly.
+This is a static site served via Cloudflare Workers static assets. `wrangler.jsonc`
+points Cloudflare at the `dist/` build output, with a single-page fallback.
 
-1. Push this repository to GitHub.
-2. In the Cloudflare dashboard: **Workers & Pages → Create → Pages → Connect to Git**.
-3. Build settings:
-   - **Framework preset**: `Vite`
-   - **Build command**: `npm run build`
-   - **Build output directory**: `dist`
-4. Add your custom domain under **Custom domains** once the first deploy is live.
+**Connected to Git (recommended):** in the Cloudflare dashboard, import
+`vsrdouglas/portfolio` and use:
 
-`public/_headers` sets long-lived caching for the hashed asset files.
+- **Build command**: `npm run build`
+- **Deploy command**: `npx wrangler deploy`
+
+Every push to `main` then builds and deploys automatically. Add your domain under
+the project's **Custom domains** once the first deploy is live.
+
+**From your machine** (one-off): `npm run build && npx wrangler deploy`.
+
+`public/_headers` is copied into `dist/` and applies security headers plus
+long-lived caching for hashed assets.
 
 ## To do before launch
 
