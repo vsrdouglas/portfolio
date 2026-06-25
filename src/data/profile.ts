@@ -2,6 +2,7 @@
  * Single source of truth for every word and link on the site.
  * Edit this file to update content — components read from it, never hardcode.
  */
+import incitaVoxLogo from "../assets/incita-vox-logo.png";
 import inconfidentesFightLogo from "../assets/inconfidentes-fight-logo.png";
 import johnsHopkinsLogo from "../assets/johns-hopkins-logo.png";
 import rlAssociadosLogo from "../assets/rl-associados-logo.png";
@@ -221,6 +222,15 @@ export const profile: Profile = {
   //   stack: ["NestJS", "PostgreSQL", "GCP"],
   // },
   projects: [
+    {
+      name: "IncitaVox",
+      context: "AI voice-to-prompt web app · Personal project",
+      logo: incitaVoxLogo,
+      description:
+        "A privacy-first web app that turns a spoken prompt into an enriched one. It records your voice, transcribes it with Whisper and reads your vocal tone — energy, valence and assertiveness — with a wav2vec2 model, then folds that emotional context back into the prompt. I built the full stack: a React single-page app and a containerized Python service on Cloud Run that processes audio in memory and discards it immediately, so nothing is ever stored.",
+      stack: ["React", "TypeScript", "Vite", "Python", "Cloud Run", "Docker", "faster-whisper", "wav2vec2", "Cloudflare"],
+      live: "https://incitavox.com",
+    },
     {
       name: "Inconfidentes Fight",
       context: "Muay Thai & Boxing event · Ouro Preto, MG",
