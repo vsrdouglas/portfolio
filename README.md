@@ -1,6 +1,6 @@
 # Douglas Rodrigues — Portfolio
 
-Personal portfolio of **Douglas Rodrigues**, Backend Developer & Tech Lead.
+Personal portfolio of **Douglas Rodrigues**, Full Stack Developer & Tech Lead.
 
 A fast, light, single-page site: a soft "engineer's paper" light theme, an
 electric-blue → cyan signal gradient, scroll-reveal animations, and a hero

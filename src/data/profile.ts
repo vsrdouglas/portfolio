@@ -87,14 +87,14 @@ export interface Profile {
 
 export const profile: Profile = {
   name: "Douglas Rodrigues",
-  role: "Backend Developer & Tech Lead",
+  role: "Full Stack Developer & Tech Lead",
   location: "Belo Horizonte, Brazil",
   email: "vsrdouglas14@gmail.com",
   // Drop a CV file in /public and set its path here to show the "Download CV" button.
   // resumeUrl: "/douglas-rodrigues-cv.pdf",
 
   hero: {
-    lead: "Backend Developer & Tech Lead",
+    lead: "Full Stack Developer & Tech Lead",
     headline: "I design backend systems",
     highlight: "built to scale",
     headlineTail: "and stay reliable.",

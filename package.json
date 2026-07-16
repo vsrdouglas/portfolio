@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "license": "MIT",
-  "description": "Personal portfolio of Douglas Rodrigues — Backend Developer & Tech Lead.",
+  "description": "Personal portfolio of Douglas Rodrigues — Full Stack Developer & Tech Lead.",
   "scripts": {
     "dev": "vite",
     "build": "tsc --noEmit && vite build",
