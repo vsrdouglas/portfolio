@@ -181,7 +181,7 @@ export const profile: Profile = {
     },
     {
       label: "Testing",
-      items: ["Jest", "Playwright", "End-to-end testing"],
+      items: ["Jest", "Playwright", "Stryker (mutation testing)", "Patrol (Flutter E2E)"],
     },
     {
       label: "AI & agents",
