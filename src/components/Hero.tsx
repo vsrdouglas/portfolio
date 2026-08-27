@@ -49,7 +49,8 @@ export function Hero() {
           className="mt-6 max-w-3xl font-display text-4xl font-bold leading-[1.05] tracking-tight text-ink sm:text-6xl lg:text-7xl"
         >
           {profile.hero.headline}{" "}
-          <span className="text-gradient">{profile.hero.highlight}</span>{" "}
+          {/* Keep the gradient phrase on one line so it never splits mid-break. */}
+          <span className="text-gradient whitespace-nowrap">{profile.hero.highlight}</span>{" "}
           {profile.hero.headlineTail}
         </motion.h1>
 

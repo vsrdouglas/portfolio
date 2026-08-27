@@ -117,7 +117,7 @@ export const profile: Profile = {
 
   hero: {
     lead: "Software Engineer",
-    headline: "I build web products",
+    headline: "I build products",
     highlight: "end to end",
     headlineTail: "from database to interface.",
     subhead:
