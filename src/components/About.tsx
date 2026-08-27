@@ -5,7 +5,7 @@ import portrait from "../assets/portrait.jpg";
 
 export function About() {
   return (
-    <Section id="about" tag="about" title="Backend depth, full-stack range">
+    <Section id="about" tag="about" title="Full stack, end to end">
       <div className="grid gap-12 lg:grid-cols-[1.6fr_1fr]">
         <div className="space-y-6">
           {profile.about.map((paragraph, index) => (
@@ -48,7 +48,7 @@ export function About() {
                 <div>
                   <dt className="text-muted">Focus</dt>
                   <dd className="mt-1 font-medium text-ink">
-                    Scalable, cloud-native backend systems
+                    Architecture and end-to-end product delivery
                   </dd>
                 </div>
               </dl>

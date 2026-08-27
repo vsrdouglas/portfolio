@@ -5,6 +5,7 @@ import { ArrowDownIcon, ArrowUpRightIcon, GitHubIcon, LinkedInIcon, MailIcon } f
 
 export function Hero() {
   const reduceMotion = useReducedMotion();
+  const credential = profile.featuredCredential;
 
   // Children stagger in after the canvas is already breathing behind them.
   const container = {
@@ -58,6 +59,38 @@ export function Hero() {
         >
           {profile.hero.subhead}
         </motion.p>
+
+        {credential ? (
+          <motion.a
+            variants={item}
+            href={credential.verifyUrl}
+            target="_blank"
+            rel="noreferrer noopener"
+            className="group mt-9 inline-flex max-w-md items-center gap-4 self-start rounded-2xl border border-line bg-surface/85 p-3 pr-5 backdrop-blur-sm transition-colors hover:border-accent"
+          >
+            <img
+              src={credential.badge}
+              alt=""
+              width={64}
+              height={64}
+              decoding="async"
+              className="h-16 w-16 shrink-0 transition-transform group-hover:scale-105"
+            />
+            <span className="min-w-0">
+              <span className="eyebrow block">{"// newly certified"}</span>
+              <span className="mt-1 block font-display font-bold leading-snug text-ink">
+                {credential.name}
+              </span>
+              <span className="mt-1 flex flex-wrap items-center gap-x-2 text-sm text-muted">
+                {credential.issuer} · {credential.year}
+                <span className="inline-flex items-center gap-1 text-accent group-hover:underline">
+                  Verify
+                  <ArrowUpRightIcon width={13} height={13} />
+                </span>
+              </span>
+            </span>
+          </motion.a>
+        ) : null}
 
         <motion.div
           variants={item}

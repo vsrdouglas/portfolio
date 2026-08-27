@@ -1,7 +1,7 @@
 import { profile, type Certification } from "../data/profile.ts";
 import { Section } from "./Section.tsx";
 import { Reveal } from "./Reveal.tsx";
-import { AwardIcon } from "./icons.tsx";
+import { ArrowUpRightIcon, AwardIcon } from "./icons.tsx";
 
 /** Up to three letters for the fallback badge, from the issuer (or the name). */
 function badgeInitials(cert: Certification): string {
@@ -73,8 +73,19 @@ export function Education() {
                         {cert.name}
                       </p>
                       {cert.issuer || cert.year ? (
-                        <p className="mt-0.5 text-sm text-muted">
+                        <p className="mt-0.5 flex flex-wrap items-center gap-x-2 text-sm text-muted">
                           {[cert.issuer, cert.year].filter(Boolean).join(" · ")}
+                          {cert.url ? (
+                            <a
+                              href={cert.url}
+                              target="_blank"
+                              rel="noreferrer noopener"
+                              className="inline-flex items-center gap-1 text-accent hover:underline"
+                            >
+                              Verify
+                              <ArrowUpRightIcon width={13} height={13} />
+                            </a>
+                          ) : null}
                         </p>
                       ) : null}
                     </div>

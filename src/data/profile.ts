@@ -2,6 +2,7 @@
  * Single source of truth for every word and link on the site.
  * Edit this file to update content — components read from it, never hardcode.
  */
+import claudeArchitectBadge from "../assets/claude-certified-architect.png";
 import incitaVoxLogo from "../assets/incita-vox-logo.png";
 import inconfidentesFightLogo from "../assets/inconfidentes-fight-logo.png";
 import johnsHopkinsLogo from "../assets/johns-hopkins-logo.png";
@@ -59,6 +60,18 @@ export interface Certification {
   readonly logo?: string;
   /** Featured certs render as rich cards; the rest as a compact list. */
   readonly featured?: boolean;
+  /** Public verification page, e.g. a Credly badge. Renders a "Verify" link. */
+  readonly url?: string;
+}
+
+/** The one credential worth interrupting the hero for. Omit to hide the callout. */
+export interface FeaturedCredential {
+  readonly name: string;
+  readonly issuer: string;
+  readonly year: string;
+  /** Badge artwork, shown at full bleed (transparent PNG works best). */
+  readonly badge: string;
+  readonly verifyUrl: string;
 }
 
 export interface Profile {
@@ -67,6 +80,7 @@ export interface Profile {
   readonly location: string;
   readonly email: string;
   readonly resumeUrl?: string;
+  readonly featuredCredential?: FeaturedCredential;
   readonly hero: {
     readonly lead: string;
     readonly headline: string;
@@ -93,25 +107,33 @@ export const profile: Profile = {
   // Drop a CV file in /public and set its path here to show the "Download CV" button.
   // resumeUrl: "/douglas-rodrigues-cv.pdf",
 
+  featuredCredential: {
+    name: "Claude Certified Architect — Foundations",
+    issuer: "Anthropic",
+    year: "2026",
+    badge: claudeArchitectBadge,
+    verifyUrl: "https://www.credly.com/badges/5ad0193b-70b2-4468-a5b7-47aeea5e7dc3",
+  },
+
   hero: {
     lead: "Full Stack Developer & Tech Lead",
-    headline: "I design backend systems",
-    highlight: "built to scale",
-    headlineTail: "and stay reliable.",
+    headline: "I build web products",
+    highlight: "end to end",
+    headlineTail: "from database to interface.",
     subhead:
-      "Backend developer and tech lead with 5+ years architecting cloud-native services in Node.js, NestJS, TypeScript and PostgreSQL, turning business requirements into systems teams can depend on.",
+      "Full stack developer and tech lead with 5+ years shipping cloud-native products: Node.js, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, all running on Google Cloud.",
   },
 
   stats: [
     { value: "5+", label: "Years building & leading" },
-    { value: "Scalable", label: "Cloud-native by design" },
-    { value: "T-shaped", label: "Backend deep, full-stack wide" },
+    { value: "End to end", label: "API, web and mobile" },
+    { value: "Tech Lead", label: "Architecture, delivery & mentoring" },
   ],
 
   about: [
-    "I'm a backend engineer with 5+ years building scalable, cloud-native systems and high-performance services. I specialize in Node.js, TypeScript, PostgreSQL and Google Cloud, designing architectures that hold up as the business grows.",
-    "As a T-shaped engineer, deep backend expertise sits next to a working knowledge of cloud infrastructure, frontend and mobile. That range lets me make sound technical calls and contribute wherever the impact is highest: API design, data migrations, or shipping Angular and Flutter features when the team needs them.",
-    "Today I lead backend architecture and a cross-functional team, mentoring engineers and acting as the bridge between the codebase and the people who depend on it.",
+    "I'm a full stack developer with 5+ years building scalable, cloud-native products — from the API and the data model up to the screens people actually use. My core stack is Node.js, TypeScript, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, deployed on Google Cloud.",
+    "Owning both ends changes how I build: I design APIs around the interfaces that consume them, chase a performance problem to whichever side it really lives on, and ship a feature all the way through without waiting on a handoff.",
+    "Today I lead architecture and a cross-functional team, mentoring engineers and acting as the bridge between the codebase and the people who depend on it.",
   ],
 
   socials: [
@@ -146,6 +168,10 @@ export const profile: Profile = {
       items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices"],
     },
     {
+      label: "Frontend & Mobile",
+      items: ["Angular", "React", "Next.js", "Tailwind CSS", "Flutter"],
+    },
+    {
       label: "Data",
       items: ["PostgreSQL", "Redis", "NoSQL", "Data modeling", "Query optimization"],
     },
@@ -154,31 +180,34 @@ export const profile: Profile = {
       items: ["Google Cloud", "Firebase", "Docker", "CI/CD", "Serverless"],
     },
     {
-      label: "Frontend & Mobile",
-      items: ["Angular", "Flutter", "HTML & CSS"],
+      label: "Testing",
+      items: ["Jest", "Playwright", "End-to-end testing"],
     },
     {
-      label: "Testing",
-      items: ["Jest", "Playwright"],
+      label: "AI & agents",
+      items: ["Claude Agent SDK", "Prompt engineering", "MCP & tool design"],
     },
   ],
 
   experience: [
     {
       company: "Tekna.Rocks",
-      role: "Backend Developer",
+      role: "Tech Lead & Full Stack Developer",
       period: "Oct 2021 - Present",
       location: "Remote · Mill Valley, CA",
       summary:
-        "Leading backend architecture and a cross-functional engineering team building SaaS products for regulated industries.",
+        "Leading architecture and a cross-functional engineering team building SaaS products for regulated industries, contributing across the stack from API to interface.",
       highlights: [
         "Lead the architecture, development and delivery of new features, major integrations and platform improvements, translating business requirements into scalable technical solutions.",
+        "Design and maintain the backend services and APIs powering the web and mobile applications, from data modeling to payment gateway, ERP and third-party integrations.",
+        "Deliver Angular and Flutter features end to end, so a feature ships whole instead of waiting on a handoff between backend and frontend.",
         "Own cloud infrastructure and DevOps on Google Cloud, operating serverless applications, managing cloud costs and maintaining CI/CD pipelines for reliable, high-availability deploys.",
         "Drive PostgreSQL architecture, SQL optimization, data migrations and large-scale refactors across core business systems.",
+        "Implement automated testing strategies, unit through end-to-end, to keep the codebase reliable and safe to change.",
         "Mentor developers through 1:1s, architecture reviews and feedback cycles, and introduced AI-assisted engineering workflows to the team.",
         "Act as the technical point of contact for third-party vendors during integration and implementation projects.",
       ],
-      stack: ["Node.js", "TypeScript", "NestJS", "PostgreSQL", "Redis", "GCP", "Docker", "CI/CD"],
+      stack: ["Node.js", "TypeScript", "NestJS", "PostgreSQL", "Angular", "Flutter", "GCP", "Docker", "CI/CD"],
     },
     {
       company: "Universidade Federal de Itajubá",
@@ -257,6 +286,14 @@ export const profile: Profile = {
 
   certifications: [
     {
+      name: "Claude Certified Architect — Foundations",
+      issuer: "Anthropic",
+      year: "2026",
+      logo: claudeArchitectBadge,
+      featured: true,
+      url: "https://www.credly.com/badges/5ad0193b-70b2-4468-a5b7-47aeea5e7dc3",
+    },
+    {
       name: "HTML, CSS & JavaScript for Web Developers",
       issuer: "Johns Hopkins University",
       year: "2021",
@@ -271,6 +308,8 @@ export const profile: Profile = {
       featured: true,
     },
     { name: "NodeJS: The Complete Guide (MVC, REST, GraphQL, Deno)" },
+    { name: "Angular: The Complete Guide (v17+)" },
     { name: "Flutter & Dart: The Complete Guide" },
+    { name: "Six Sigma White Belt" },
   ],
 };

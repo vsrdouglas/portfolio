@@ -8,7 +8,7 @@ export function TechStack() {
       id="stack"
       tag="stack"
       title="The tools I reach for"
-      intro="Grouped by where each piece sits in the system."
+      intro="Grouped by where each piece sits in the stack."
     >
       <dl className="border-t border-line">
         {profile.techGroups.map((group, index) => (
