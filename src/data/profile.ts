@@ -121,7 +121,7 @@ export const profile: Profile = {
     highlight: "end to end",
     headlineTail: "from database to interface.",
     subhead:
-      "Software engineer and tech lead with 5+ years shipping cloud-native products: Node.js, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, all running on Google Cloud.",
+      "Software engineer with 5+ years shipping cloud-native products: Node.js, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, all running on Google Cloud.",
   },
 
   stats: [
@@ -192,7 +192,7 @@ export const profile: Profile = {
   experience: [
     {
       company: "Tekna.Rocks",
-      role: "Tech Lead & Software Engineer",
+      role: "Tech Lead & Full Stack Developer",
       period: "Oct 2021 - Present",
       location: "Remote · Mill Valley, CA",
       summary:
