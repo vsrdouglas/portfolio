@@ -77,7 +77,7 @@ export function Hero() {
               className="h-16 w-16 shrink-0 transition-transform group-hover:scale-105"
             />
             <span className="min-w-0">
-              <span className="eyebrow block">{"// newly certified"}</span>
+              <span className="eyebrow block">{"// certified"}</span>
               <span className="mt-1 block font-display font-bold leading-snug text-ink">
                 {credential.name}
               </span>
