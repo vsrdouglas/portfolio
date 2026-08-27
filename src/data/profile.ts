@@ -101,7 +101,7 @@ export interface Profile {
 
 export const profile: Profile = {
   name: "Douglas Rodrigues",
-  role: "Full Stack Developer & Tech Lead",
+  role: "Software Engineer",
   location: "Belo Horizonte, Brazil",
   email: "vsrdouglas14@gmail.com",
   // Drop a CV file in /public and set its path here to show the "Download CV" button.
@@ -116,22 +116,22 @@ export const profile: Profile = {
   },
 
   hero: {
-    lead: "Full Stack Developer & Tech Lead",
+    lead: "Software Engineer",
     headline: "I build web products",
     highlight: "end to end",
     headlineTail: "from database to interface.",
     subhead:
-      "Full stack developer and tech lead with 5+ years shipping cloud-native products: Node.js, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, all running on Google Cloud.",
+      "Software engineer and tech lead with 5+ years shipping cloud-native products: Node.js, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, all running on Google Cloud.",
   },
 
   stats: [
     { value: "5+", label: "Years building & leading" },
-    { value: "End to end", label: "API, web and mobile" },
+    { value: "End to end", label: "Server, web and mobile" },
     { value: "Tech Lead", label: "Architecture, delivery & mentoring" },
   ],
 
   about: [
-    "I'm a full stack developer with 5+ years building scalable, cloud-native products — from the API and the data model up to the screens people actually use. My core stack is Node.js, TypeScript, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, deployed on Google Cloud.",
+    "I'm a software engineer with 5+ years building scalable, cloud-native products — from the API and the data model up to the screens people actually use. My core stack is Node.js, TypeScript, NestJS and PostgreSQL on the server, Angular, React and Flutter on the client, deployed on Google Cloud.",
     "Owning both ends changes how I build: I design APIs around the interfaces that consume them, chase a performance problem to whichever side it really lives on, and ship a feature all the way through without waiting on a handoff.",
     "Today I lead architecture and a cross-functional team, mentoring engineers and acting as the bridge between the codebase and the people who depend on it.",
   ],
@@ -192,7 +192,7 @@ export const profile: Profile = {
   experience: [
     {
       company: "Tekna.Rocks",
-      role: "Tech Lead & Full Stack Developer",
+      role: "Tech Lead & Software Engineer",
       period: "Oct 2021 - Present",
       location: "Remote · Mill Valley, CA",
       summary:
