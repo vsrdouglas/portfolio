@@ -161,19 +161,15 @@ export const profile: Profile = {
   techGroups: [
     {
       label: "Languages",
-      items: ["TypeScript", "JavaScript", "SQL", "Dart", "Go"],
+      items: ["TypeScript", "JavaScript", "SQL", "Dart"],
     },
     {
       label: "Backend",
-      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices"],
+      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices", "GraphQL"],
     },
     {
       label: "Frontend & Mobile",
-      items: ["Angular", "React", "Next.js", "Tailwind CSS", "Flutter", "HTML", "CSS Modules", "Native iOS/Android"],
-    },
-    {
-      label: "GraphQL & Auth",
-      items: ["Client-side GraphQL", "Clerk"],
+      items: ["Angular", "React", "Next.js", "Tailwind CSS", "Flutter"],
     },
     {
       label: "Data",
@@ -185,11 +181,7 @@ export const profile: Profile = {
     },
     {
       label: "Testing",
-      items: ["Jest", "Playwright", "Stryker (mutation testing)", "Patrol (Flutter E2E)", "Unit testing", "Automated testing"],
-    },
-    {
-      label: "Tooling",
-      items: ["Git"],
+      items: ["Jest", "Playwright", "Stryker (mutation testing)", "Patrol (Flutter E2E)"],
     },
     {
       label: "AI & agents",
