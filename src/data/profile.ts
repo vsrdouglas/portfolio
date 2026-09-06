@@ -189,7 +189,7 @@ export const profile: Profile = {
     },
     {
       label: "Tooling",
-      items: ["Nx monorepos", "pnpm", "Git"],
+      items: ["pnpm", "Git"],
     },
     {
       label: "AI & agents",
