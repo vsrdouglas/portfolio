@@ -165,7 +165,7 @@ export const profile: Profile = {
     },
     {
       label: "Backend",
-      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices", "External API integration"],
+      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices"],
     },
     {
       label: "Frontend & Mobile",
