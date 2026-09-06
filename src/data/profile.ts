@@ -173,7 +173,7 @@ export const profile: Profile = {
     },
     {
       label: "GraphQL & Auth",
-      items: ["urql", "Client-side GraphQL", "Apollo Federation", "Clerk"],
+      items: ["Client-side GraphQL", "Clerk"],
     },
     {
       label: "Data",
