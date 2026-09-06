@@ -161,15 +161,19 @@ export const profile: Profile = {
   techGroups: [
     {
       label: "Languages",
-      items: ["TypeScript", "JavaScript", "SQL", "Dart"],
+      items: ["TypeScript", "JavaScript", "SQL", "Dart", "Go"],
     },
     {
       label: "Backend",
-      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices"],
+      items: ["Node.js", "NestJS", "Express.js", "REST APIs", "Microservices", "External API integration"],
     },
     {
       label: "Frontend & Mobile",
-      items: ["Angular", "React", "Next.js", "Tailwind CSS", "Flutter"],
+      items: ["Angular", "React", "Next.js", "Tailwind CSS", "Flutter", "HTML", "CSS Modules", "Native iOS/Android"],
+    },
+    {
+      label: "GraphQL & Auth",
+      items: ["urql", "Client-side GraphQL", "Apollo Federation", "Clerk"],
     },
     {
       label: "Data",
@@ -177,15 +181,19 @@ export const profile: Profile = {
     },
     {
       label: "Cloud & DevOps",
-      items: ["Google Cloud", "Firebase", "Docker", "CI/CD", "Serverless"],
+      items: ["Google Cloud", "Firebase", "Docker", "CI/CD", "Serverless", "AWS"],
     },
     {
       label: "Testing",
-      items: ["Jest", "Playwright", "Stryker (mutation testing)", "Patrol (Flutter E2E)"],
+      items: ["Jest", "Playwright", "Stryker (mutation testing)", "Patrol (Flutter E2E)", "Unit testing", "Automated testing"],
+    },
+    {
+      label: "Tooling",
+      items: ["Nx monorepos", "pnpm", "Git"],
     },
     {
       label: "AI & agents",
-      items: ["Claude Agent SDK", "Prompt engineering", "MCP & tool design"],
+      items: ["Claude Agent SDK", "Prompt engineering", "MCP & tool design", "AI-assisted development"],
     },
   ],
 
